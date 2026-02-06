@@ -59,6 +59,19 @@ nav {
             display: flex;
             justify-content: flex-start;
             width: 10.5%;
+
+            a{
+                display: flex;
+                align-items: center;
+                position: relative;
+                svg{
+                    height: inherit;
+                    width: fit-content;
+                    position: absolute;
+                    left: -25px;
+                    top: 1px;
+                }
+            }
         }
 
         .nav-mid {
@@ -560,4 +573,187 @@ nav {
         color: white;
     }
     }
+}
+
+.last-cta{
+    align-self: center;
+    padding: 10px 0;
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:40px;
+
+
+        .top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:15px;
+            
+            h1{
+                text-align: center;
+                width: 420px;
+                font-size: 2.2rem;
+            }
+            
+            p{
+            }
+        }
+
+        a{
+            padding: 6px 25px 8px 25px;
+            border-radius: 20px;
+        }
+
+        .bottom{
+            .start-btn{
+                background-color: black;
+            }
+
+            .demo-btn{
+                color: black;
+            }
+        }
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 100px 0;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding: 30px 50px 30px 50px;
+            align-items: center;
+            gap: 10px;
+
+            svg{
+                border: 1px solid #EEEEEE;
+                height: 50px;
+                width: 50px;
+                border-radius: 15px;
+                background-color: white;
+                padding: 5px;
+            }
+
+            a{
+                margin-top: 20px;
+                color: var(--given-green);
+            }
+
+        }
+
+        .left-card{
+            border-right: 1px solid #EEEEEE;
+        }
+    }
+}
+
+/* footer */
+
+footer{
+    border-top: 1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-container{
+        width: 60%;
+        border-right: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        /* padding: 200px 0; */
+
+        .top{
+            padding: 80px 25px 30px 25px;
+            border-bottom: 1px solid #EEEEEE;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                img{
+                    width: 100px;
+                }
+            }
+
+            div{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                svg:hover{
+                    color: gray;
+                }
+
+                svg{
+                    color: rgb(181, 181, 181);
+                }
+            }
+        }
+
+        .grid{
+            padding: 50px 30px;
+            font-weight: 500;
+            font-size: 15px;
+
+            .grid-head{
+                display: grid;
+                color: #9D9D9E;
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            .grid-body{
+                display: grid;
+                padding: 10px 0px;
+                gap: 12px;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+
+                a:hove{
+                    background-color: #EFEFEF;
+                }
+
+                a{
+                    border-radius: 20px;
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .last{
+            border-top: 1px solid #EEEEEE;
+            padding: 30px 20px;
+            padding-bottom: 100px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+            .system{
+                svg{
+                    width: 12px;
+                    height: 12px;
+                }
+                display: flex;
+                align-items: center;
+                gap:5px;
+                border-radius: 15px;
+                background-color: #EFEFEF;
+                width: max-content;
+                padding: 2px 8px;
+                font-size: small;
+                
+                
+            }
+
+            .copyright{
+                span{
+                    color: rgb(181, 181, 181);
+                }
+            }
+        }
+    }
+
 }
